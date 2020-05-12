@@ -4,16 +4,17 @@ import { Link as RouterLink } from "react-router-dom";
 
 const styles = (theme: Theme) => ({
     navLink: {
-      color: "white",
+      color: theme.palette.primary.dark,
       fontSize: "14px",
-      margin: "20px",
+      margin: "10px",
       "&:hover": {
-        color: theme.palette.primary.main,
+        fontWeight: "bolder",
         textDecoration: "none",
       },
     },
     appBar: {
-      backgroundColor: "none",
+      backgroundColor: "transparent",
+      boxShadow: "none"
     },
   });
   
@@ -25,7 +26,10 @@ const styles = (theme: Theme) => ({
         <AppBar className={classes.appBar} position="static">
           <Toolbar>
             <Link className={classes.navLink} component={RouterLink} to="/">
-              Home
+              HOME
+            </Link>
+            <Link className={classes.navLink} component={RouterLink} to="/Countries">
+              COUNTRIES
             </Link>
           </Toolbar>
         </AppBar>
