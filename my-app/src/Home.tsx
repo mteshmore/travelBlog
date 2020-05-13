@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./Home.css";
+import { Typography } from "@material-ui/core";
 
 interface MyProps {
   // adding a ? makes the props optional
@@ -19,7 +20,8 @@ export class Home extends React.Component<MyProps, MyState> {
     return (
       <div>
         <div className="title">Adventures Await</div>
-        <div>Hello World!</div>
+        <Typography variant="h1">Plan your adventure with us!</Typography>
+        <div className="adventure-timeline"> _______________________ </div>
       </div>
     );
   }

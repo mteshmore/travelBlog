@@ -39,6 +39,7 @@
   },
   "devDependencies": {
     "@types/react": "^16.9.35",
-    "@types/react-router-dom": "^5.1.5"
+    "@types/react-router-dom": "^5.1.5",
+    "file-loader": "^6.0.0"
   }
 }

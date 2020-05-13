@@ -8,6 +8,13 @@ import { Countries } from "./Countries";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core";
 import "./App.css";
 
+const freePen = {
+  fontFamily: "Free Pen",
+  src: `
+      local("Free-Pen),
+      url(${"./fonts/Free-Pen.ttf"}) format("ttf")`
+}
+
 const defaultTheme = createMuiTheme({
   palette: {
     primary: {
@@ -25,6 +32,11 @@ const defaultTheme = createMuiTheme({
     fontSize: 20,
   },
   overrides: {
+    MuiCssBaseline: {
+      "@global": {
+        "@font-face": [freePen],
+      },
+    },
     MuiTypography: {
       root: {
         textOverflow: "ellipsis",
@@ -32,7 +44,7 @@ const defaultTheme = createMuiTheme({
       },
       h1: {
         fontFamily: "Free Pen",
-        fontSize: "80px",
+        fontSize: "20px",
       },
       h2: {
         fontSize: "40px",
