@@ -2,18 +2,19 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Header from "./Header";
+import Footer from "./Footer";
 import { Home } from "./Home";
 import { Countries } from "./Countries";
 
 import { createMuiTheme, ThemeProvider } from "@material-ui/core";
 import "./App.css";
 
-const freePen = {
-  fontFamily: "Free Pen",
-  src: `
-      local("Free-Pen),
-      url(${"./fonts/Free-Pen.ttf"}) format("ttf")`
-}
+// const freePen = {
+//   fontFamily: "Free Pen",
+//   src: `
+//       local("Free-Pen),
+//       url(${"./fonts/Free-Pen.ttf"}) format("ttf")`
+// }
 
 const defaultTheme = createMuiTheme({
   palette: {
@@ -32,11 +33,11 @@ const defaultTheme = createMuiTheme({
     fontSize: 20,
   },
   overrides: {
-    MuiCssBaseline: {
-      "@global": {
-        "@font-face": [freePen],
-      },
-    },
+    // MuiCssBaseline: {
+    //   "@global": {
+    //     "@font-face": [freePen],
+    //   },
+    // },
     MuiTypography: {
       root: {
         textOverflow: "ellipsis",
@@ -44,7 +45,8 @@ const defaultTheme = createMuiTheme({
       },
       h1: {
         fontFamily: "Free Pen",
-        fontSize: "20px",
+        fontSize: "50px",
+        color: "#707070"
       },
       h2: {
         fontSize: "40px",
@@ -99,6 +101,7 @@ export default class App extends React.Component<MyProps, MyState> {
                 <Route path="/" component={Home} />
               </Switch>
             </div>
+            <Footer />
           </Router>
         </ThemeProvider>
       </div>
