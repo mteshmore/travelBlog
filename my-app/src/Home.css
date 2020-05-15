@@ -1,8 +1,111 @@
-.title {
-    background-image: url("https://images.unsplash.com/photo-1428908728789-d2de25dbd4e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
-    height: 800px;
-    background-position: center;
+.site-title {
+  /* background-image: url("https://images.unsplash.com/photo-1428908728789-d2de25dbd4e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"); */
+  background-image: url("./images/home-title.png");
+  height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.timeline {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.timeline-graphic {
+  margin: auto;
+  padding-top: 25px;
+  width: 700px;
+}
+
+.timeline-text {
+  display: inline-flex;
+  text-align: center;
+}
+
+.timeline-text-box {
+  padding-top: 10px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.destinations {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding-bottom: 50px;
+  background-image: url("./images/airplane-background.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: 100px;
+}
+
+.polaroid-chain {
+  display: inline-flex;
+  text-align: center;
+}
+
+.polaroid-destination,
+.polaroid-destination-2 {
+  background-image: url("./images/destinations-graphic.png");
+  height: 300px;
+  width: 225px;
+  box-shadow: 2px 2px 6px #b3b3b3;
+  border-radius: 5px;
+  margin: 30px;
+  margin-top: 25;
+  padding: 15px;
+}
+
+.polaroid-destination {
+  transform: rotate(359deg);
+}
+
+.polaroid-destination-2 {
+  transform: rotate(2deg);
+}
+
+.destination-picture{
+    width: 225px;
+}
+
+.destination-divider {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    width: 20px;
+}
+
+.announcements {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.announcement-picture {
+    width: 100vw;
+}
+
+.blogs {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.blog-picture {
+    padding-top: 25px;
+    width: 1000px;
+}
+
+.news {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.undlerined {
+    background-image: url("./images//curly-underline-2.png");
     background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1;
+    background-size: 300px;
+    background-position: center;
+    background-position-y: 35px;
 }

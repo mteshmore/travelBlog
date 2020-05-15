@@ -27,10 +27,14 @@ const defaultTheme = createMuiTheme({
       main: "#BD9391",
       dark: "#707070",
     },
+    text: {
+      primary: "#707070",
+      secondary: "#FCF5E8"
+    }
   },
   typography: {
     fontFamily: "Raleway",
-    fontSize: 20,
+    fontSize: 12,
   },
   overrides: {
     // MuiCssBaseline: {

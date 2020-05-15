@@ -31,7 +31,7 @@ class Footer extends React.Component<WithStyles<typeof styles>> {
           @Copyright Adventures Await 2020{" "}
         </div>
         <div className={classes.footerTitle}> CONTACT </div>
-        <div className={classes.footerTitle}> EmaiL: </div>
+        <div className={classes.footerTitle}> Email: </div>
         <div className={classes.footerTitle}> Phone: </div>
         {/* social media icons here */}
       </div>
