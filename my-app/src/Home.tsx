@@ -105,7 +105,7 @@ export class Home extends React.Component {
           {/* <Typography variant="h1">Explore with our Podcasts</Typography> */}
           <img
             className="announcement-picture"
-            src="./images/announcement.png"
+            src="./images/announcement-postcard.png"
             alt="announcements"
           />{" "}
         </div>

@@ -1,15 +1,19 @@
 .footer {
   background-image: url("./images/footer.png");
   width: 100vw;
-  height: 10vh;
+  height: 12vh;
   color: #fcf5e8;
   font-size: 14px;
-  padding: 50px;
+  padding: 40px;
   display: inline-flex;
 }
 
 .footer-brand {
   width: 100px;
+}
+
+.footer-copyright {
+    padding-top: 30px;
 }
 
 .footer-contact {
