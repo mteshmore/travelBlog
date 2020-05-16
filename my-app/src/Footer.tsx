@@ -1,42 +1,30 @@
 import * as React from "react";
-import { Theme, WithStyles, Link, withStyles } from "@material-ui/core";
-import { BottomNavigation } from "@material-ui/core";
 // import { Link as RouterLink } from "react-router-dom";
 
-const styles = (theme: Theme) => ({
-  footerTitle: {
-    color: theme.palette.primary.light,
-    fontSize: "10px",
-    marginTop: "10px",
-    marginRight: "200px",
-    "&:hover": {
-      fontWeight: "bolder",
-      textDecoration: "none",
-    },
-  },
-  footer: {
-    backgroundColor: theme.palette.secondary.dark,
-  },
-});
+import "./footer.css";
 
-class Footer extends React.Component<WithStyles<typeof styles>> {
+export default class Footer extends React.Component {
   render() {
-    const { classes } = this.props;
-
     return (
-      <div className={classes.footer}>
-        <div className={classes.footerTitle}> Adventures AWAIT </div>
-        <div className={classes.footerTitle}>
-          {" "}
-          @Copyright Adventures Await 2020{" "}
+      <div className="footer">
+        <div className="footer-copyright">
+          <img
+            className="footer-brand"
+            src="./images/footer-brand.png"
+            alt="brand"
+          />
+          <div>@Copyright Adventures Await 2020 </div>
         </div>
-        <div className={classes.footerTitle}> CONTACT </div>
-        <div className={classes.footerTitle}> Email: </div>
-        <div className={classes.footerTitle}> Phone: </div>
+        <div className="footer-contact">
+          {" "}
+          <div className="contact footer-title">CONTACT</div>
+          <div className="contact email"> EMAIL: newadventuresawaitforyou@gmail.​com</div>
+          <div className="contact phone"> PHONE: 1-866-872-8577</div>
+        </div>
         {/* social media icons here */}
       </div>
     );
   }
 }
 
-export default withStyles(styles)(Footer);
+// export default withStyles(styles)(Footer);

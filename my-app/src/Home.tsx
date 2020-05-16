@@ -61,7 +61,7 @@ export class Home extends React.Component {
               <Typography color="textPrimary"> DESTINATION ONE</Typography>
             </div>
             <div className="polaroid-destination-2">
-            <img
+              <img
                 className="destination-picture"
                 src="./images/destination-2.png"
                 alt="destinations"
@@ -74,7 +74,7 @@ export class Home extends React.Component {
               <Typography color="textPrimary"> DESTINATION TWO</Typography>
             </div>
             <div className="polaroid-destination">
-            <img
+              <img
                 className="destination-picture"
                 src="./images/destination-3.png"
                 alt="destinations"
@@ -87,7 +87,7 @@ export class Home extends React.Component {
               <Typography color="textPrimary"> DESTINATION THRE</Typography>
             </div>
             <div className="polaroid-destination-2">
-            <img
+              <img
                 className="destination-picture"
                 src="./images/destination-4.png"
                 alt="destinations"
@@ -104,21 +104,61 @@ export class Home extends React.Component {
         <div className="announcements">
           {/* <Typography variant="h1">Explore with our Podcasts</Typography> */}
           <img
-                className="announcement-picture"
-                src="./images/announcement.png"
-                alt="announcements"
-              />{" "}
+            className="announcement-picture"
+            src="./images/announcement.png"
+            alt="announcements"
+          />{" "}
         </div>
         <div className="blogs">
-          <Typography className="undlerined" variant="h1">Explore from our Blogs</Typography>
-          <img
-                className="blog-picture"
-                src="./images/blog.png"
-                alt="blog"
-              />{" "}
+          <Typography className="home-undlerined" variant="h1">
+            Explore from our Blogs
+          </Typography>
+          <img className="blog-picture" src="./images/blog.png" alt="blog" />{" "}
         </div>
         <div className="news">
           <Typography variant="h1">Explore through News</Typography>
+          <div className="news-panel">
+            <div className="news-block">
+              <img
+                className="news-image"
+                src="./images/news-1.png"
+                alt="news"
+              />
+              <div className="news-title">NEWS <br/>ARTICLE <br/>TWO</div>
+            </div>
+            <div className="news-block">
+            <img
+                className="news-image"
+                src="./images/news-2.png"
+                alt="news"
+              />
+              <div className="news-title">NEWS <br/>ARTICLE <br/>THREE</div>
+            </div>
+            <div className="news-block">
+            <img
+                className="news-image"
+                src="./images/news-3.png"
+                alt="news"
+              />
+              <div className="news-title">NEWS <br/>ARTICLE <br/>FOUR</div>
+            </div>
+            <div className="news-block">
+            <img
+                className="news-image"
+                src="./images/news-4.png"
+                alt="news"
+              />
+              <div className="news-title">NEWS <br/>ARTICLE <br/>FIVE</div>
+            </div>
+            <div className="news-block">
+            <img
+                className="news-image"
+                src="./images/news-5.png"
+                alt="news"
+              />
+              <div className="news-title">NEWS <br/>ARTICLE <br/>ONE</div>
+            </div>
+          </div>
         </div>
       </div>
     );

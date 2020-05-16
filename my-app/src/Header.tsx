@@ -13,7 +13,8 @@ const styles = (theme: Theme) => ({
   navLink: {
     color: theme.palette.primary.dark,
     fontSize: "14px",
-    marginRight: "80px",
+    margin: "0 5vw",
+    paddingTop: "20px",
     "&:hover": {
       fontWeight: "bolder",
       textDecoration: "none",
@@ -22,6 +23,9 @@ const styles = (theme: Theme) => ({
   appBar: {
     backgroundColor: "transparent",
     boxShadow: "none",
+    zIndex: 2,
+    width: "100vw",
+    alignItems: "center",
   },
 });
 
@@ -30,7 +34,7 @@ class Header extends React.Component<WithStyles<typeof styles>> {
     const { classes } = this.props;
 
     return (
-      <AppBar className={classes.appBar} position="static">
+      <AppBar position="absolute" className={classes.appBar}>
         <Toolbar>
           <Link className={classes.navLink} component={RouterLink} to="/">
             HOME

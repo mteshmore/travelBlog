@@ -66,14 +66,14 @@
   transform: rotate(2deg);
 }
 
-.destination-picture{
-    width: 225px;
+.destination-picture {
+  width: 225px;
 }
 
 .destination-divider {
-    padding-top: 20px;
-    padding-bottom: 10px;
-    width: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  width: 20px;
 }
 
 .announcements {
@@ -82,7 +82,7 @@
   margin-bottom: 100px;
 }
 .announcement-picture {
-    width: 100vw;
+  width: 100vw;
 }
 
 .blogs {
@@ -92,8 +92,8 @@
 }
 
 .blog-picture {
-    padding-top: 25px;
-    width: 1000px;
+  padding-top: 25px;
+  width: 1000px;
 }
 
 .news {
@@ -102,10 +102,40 @@
   margin-bottom: 100px;
 }
 
-.undlerined {
-    background-image: url("./images//curly-underline-2.png");
-    background-repeat: no-repeat;
-    background-size: 300px;
-    background-position: center;
-    background-position-y: 35px;
+.news-panel {
+  padding: 50px;
+  display: inline-flex;
+}
+
+.news-block {
+  margin: 20px;
+  position: relative;
+}
+
+.news-image {
+  width: 200px;
+  height: 200px;
+}
+
+.news-title {
+  background-color: #fcf5e8;
+  width: 200px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 10px;
+  font-weight: 700;
+  margin: auto;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 0.6;
+  text-align: right;
+}
+
+.home-undlerined {
+  background-image: url("./images//curly-underline-2.png");
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-position: center;
+  background-position-y: 35px;
 }
