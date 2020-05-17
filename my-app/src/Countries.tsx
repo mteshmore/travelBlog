@@ -1,4 +1,5 @@
 import React from "react";
+import { Map } from "./Map";
 
 interface MyProps {
   // adding a ? makes the props optional
@@ -15,8 +16,8 @@ export class Countries extends React.Component<MyProps, MyState> {
   };
   render() {
     return (
-      <div className="App">
-        Map Time!
+      <div className="Countries">
+        <Map />
       </div>
     );
   }

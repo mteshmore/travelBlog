@@ -29,8 +29,8 @@ const defaultTheme = createMuiTheme({
     },
     text: {
       primary: "#707070",
-      secondary: "#FCF5E8"
-    }
+      secondary: "#FCF5E8",
+    },
   },
   typography: {
     fontFamily: "Raleway",
@@ -50,7 +50,7 @@ const defaultTheme = createMuiTheme({
       h1: {
         fontFamily: "Free Pen",
         fontSize: "50px",
-        color: "#707070"
+        color: "#707070",
       },
       h2: {
         fontSize: "40px",
@@ -104,8 +104,8 @@ export default class App extends React.Component<MyProps, MyState> {
                 <Route exact path="/Countries" component={Countries} />
                 <Route path="/" component={Home} />
               </Switch>
+              <Footer />
             </div>
-            <Footer />
           </Router>
         </ThemeProvider>
       </div>

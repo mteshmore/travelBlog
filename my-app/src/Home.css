@@ -11,23 +11,25 @@
   text-align: center;
   margin-top: 100px;
   margin-bottom: 100px;
+  width: 100vw;
 }
 
 .timeline-graphic {
   margin: auto;
   padding-top: 25px;
-  width: 700px;
+  width: 50vw;
 }
 
 .timeline-text {
   display: inline-flex;
   text-align: center;
+  width: 52vw;
+  justify-content: space-between;
 }
 
 .timeline-text-box {
   padding-top: 10px;
-  padding-left: 80px;
-  padding-right: 80px;
+  
 }
 
 .destinations {
@@ -39,6 +41,8 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position-y: 100px;
+  width: 100vw;
+  
 }
 
 .polaroid-chain {
@@ -46,8 +50,7 @@
   text-align: center;
 }
 
-.polaroid-destination,
-.polaroid-destination-2 {
+.polaroid-destination {
   background-image: url("./images/destinations-graphic.png");
   height: 300px;
   width: 225px;
@@ -58,11 +61,11 @@
   padding: 15px;
 }
 
-.polaroid-destination {
+.dest-1 {
   transform: rotate(359deg);
 }
 
-.polaroid-destination-2 {
+.dest-2 {
   transform: rotate(2deg);
 }
 
@@ -89,11 +92,12 @@
   text-align: center;
   margin-top: 100px;
   margin-bottom: 100px;
+  width: 100vw;
 }
 
 .blog-picture {
   padding-top: 25px;
-  width: 1000px;
+  width: 80vw;
 }
 
 .news {

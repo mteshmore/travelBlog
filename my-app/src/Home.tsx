@@ -47,7 +47,7 @@ export class Home extends React.Component {
         <div className="destinations">
           <Typography variant="h1">Explore by Destinations</Typography>
           <div className="polaroid-chain">
-            <div className="polaroid-destination">
+            <div className="polaroid-destination dest-1">
               <img
                 className="destination-picture"
                 src="./images/destination-1.png"
@@ -60,7 +60,7 @@ export class Home extends React.Component {
               />
               <Typography color="textPrimary"> DESTINATION ONE</Typography>
             </div>
-            <div className="polaroid-destination-2">
+            <div className="polaroid-destination dest-2">
               <img
                 className="destination-picture"
                 src="./images/destination-2.png"
@@ -73,7 +73,7 @@ export class Home extends React.Component {
               />
               <Typography color="textPrimary"> DESTINATION TWO</Typography>
             </div>
-            <div className="polaroid-destination">
+            <div className="polaroid-destination dest-1">
               <img
                 className="destination-picture"
                 src="./images/destination-3.png"
@@ -86,7 +86,7 @@ export class Home extends React.Component {
               />
               <Typography color="textPrimary"> DESTINATION THRE</Typography>
             </div>
-            <div className="polaroid-destination-2">
+            <div className="polaroid-destination dest-2">
               <img
                 className="destination-picture"
                 src="./images/destination-4.png"
