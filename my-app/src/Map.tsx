@@ -4,9 +4,9 @@ import * as am4core from "@amcharts/amcharts4/core";
 import * as am4maps from "@amcharts/amcharts4/maps";
 import am4geodata_worldLow from "@amcharts/amcharts4-geodata/worldLow";
 
-import am4themes_animated from "@amcharts/amcharts4/themes/animated";
+// import am4themes_animated from "@amcharts/amcharts4/themes/animated";
 import "./Map.css";
-import { Typography } from "@material-ui/core";
+// import { Typography } from "@material-ui/core";
 
 interface MyProps {
   // adding a ? makes the props optional
@@ -23,54 +23,6 @@ function am4themes_myTheme(target: any) {
 }
 
 am4core.useTheme(am4themes_myTheme);
-
-const COUNTRIES_ASIA = [
-  { id: "BY", name: "Babylon" },
-  { id: "BH", name: "Bhutan" },
-  { id: "BU", name: "Burma" },
-  { id: "CM", name: "Cambodia" },
-  { id: "CH", name: "China" },
-  { id: "IN", name: "India" },
-  { id: "ID", name: "Indonesia" },
-  { id: "IS", name: "Israel" },
-  { id: "JA", name: "Japan" },
-  { id: "KR", name: "Korea" },
-  { id: "LA", name: "Laos" },
-  { id: "MA", name: "Malaysia" },
-  { id: "PH", name: "Philippines" },
-  { id: "SB", name: "saudi Arabi" },
-  { id: "SR", name: "Sri Lanka" },
-  { id: "TW", name: "Taiwan" },
-  { id: "TH", name: "Thailand" },
-  { id: "VT", name: "Vietname" },
-];
-
-const COUNTRIES_EUROPE = [
-  { id: "BE", name: "Belgium" },
-  { id: "CZ", name: "Czechoslovakia" },
-  { id: "DE", name: "Denmark" },
-  { id: "EN", name: "England" },
-  { id: "FR", name: "France" },
-  { id: "GE", name: "Germany" },
-  { id: "HU", name: "Hungary" },
-  { id: "IC", name: "Iceland" },
-  { id: "IR", name: "Ireland" },
-  { id: "IT", name: "Italy" },
-  { id: "PG", name: "Portugal" },
-  { id: "RU", name: "Russia" },
-  { id: "SC", name: "Scotland" },
-  { id: "SP", name: "Spain" },
-  { id: "SW", name: "Sweden" },
-  { id: "SZ", name: "Switzerland" },
-  { id: "WA", name: "Wales" },
-];
-
-const COUNTRIES_NORTH_AMERICA = [
-  { id: "CA", name: "Canada" },
-  { id: "GL", name: "Greenland" },
-  { id: "DR", name: "Dominican Republic" },
-  { id: "ME", name: "Mexico" },
-];
 
 export class Map extends React.Component<MyProps, MyState> {
   state: MyState = {
@@ -115,59 +67,10 @@ export class Map extends React.Component<MyProps, MyState> {
     });
   }
 
-  handleContinentClick = () => {};
   render() {
-    const asiaCountries = COUNTRIES_ASIA.map((country) => {
-      return (
-        <div className="country-title" id={country.id}>
-          {country.name}
-        </div>
-      );
-    });
-    const europeCountries = COUNTRIES_EUROPE.map((country) => {
-      return (
-        <div className="country-title" id={country.id}>
-          {country.name}
-        </div>
-      );
-    });
-    const naCountries = COUNTRIES_NORTH_AMERICA.map((country) => {
-      return (
-        <div className="country-title" id={country.id}>
-          {country.name}
-        </div>
-      );
-    });
     return (
-      <div className="container">
-        <div className="legend">
-          <Typography className="legend-title-main" variant="h1">
-            Explore
-          </Typography>
-          <Typography className="legend-title-sub" variant="h2">
-            COUNTRIES
-          </Typography>
-          <div className="continents-list">
-            <div className="legend-continent">
-              <button className="continent-title">ASIA</button>
-              <div className="countries">{asiaCountries}</div>
-            </div>
-            {/* <div className="continent">Africa</div> */}
-            <div className="legend-continent">
-              <button className="continent-title">EUROPE</button>
-              <div className="countries">{europeCountries}</div>
-            </div>
-            <div className="legend-continent">
-              <button className="continent-title">NORTH AMERICA</button>
-              <div className="countries">{naCountries}</div>
-            </div>
-            <button className="continent-title">SOUTH AMERICA</button>
-            <button className="continent-title">OCEANIA</button>
-          </div>
-        </div>
-        <div className="map">
-          <div id="chartdiv"></div>
-        </div>
+      <div className="map">
+        <div id="chartdiv"></div>
       </div>
     );
   }

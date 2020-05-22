@@ -11,19 +11,19 @@
   text-align: center;
   margin-top: 100px;
   margin-bottom: 100px;
-  width: 100vw;
+  width: 100%;
 }
 
 .timeline-graphic {
   margin: auto;
   padding-top: 25px;
-  width: 50vw;
+  width: 50%;
 }
 
 .timeline-text {
   display: inline-flex;
   text-align: center;
-  width: 52vw;
+  width: 50%;
   justify-content: space-between;
 }
 
@@ -41,7 +41,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position-y: 100px;
-  width: 100vw;
+  width: 100%;
   
 }
 
@@ -85,19 +85,19 @@
   margin-bottom: 100px;
 }
 .announcement-picture {
-  width: 100vw;
+  width: 100%;
 }
 
 .blogs {
   text-align: center;
   margin-top: 100px;
   margin-bottom: 100px;
-  width: 100vw;
+  width: 100%;
 }
 
 .blog-picture {
   padding-top: 25px;
-  width: 80vw;
+  width: 80%;
 }
 
 .news {

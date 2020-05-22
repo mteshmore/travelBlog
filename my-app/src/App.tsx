@@ -34,7 +34,7 @@ const defaultTheme = createMuiTheme({
   },
   typography: {
     fontFamily: "Raleway",
-    fontSize: 14,
+    fontSize: 12,
   },
   overrides: {
     // MuiCssBaseline: {
@@ -58,7 +58,7 @@ const defaultTheme = createMuiTheme({
         color: "#BD9391",
       },
       h3: {
-        fontSize: "25px",
+        fontSize: "22px",
         fontWeight: "normal",
         color: "#BD9391",
       },

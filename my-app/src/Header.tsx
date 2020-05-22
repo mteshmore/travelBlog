@@ -49,28 +49,28 @@ class Header extends React.Component<WithStyles<typeof styles>> {
           <Link
             className={classes.navLink}
             component={RouterLink}
-            to="/Countries"
+            to="/"
           >
             BLOG
           </Link>
           <Link
             className={classes.navLink}
             component={RouterLink}
-            to="/Countries"
+            to="/"
           >
             NEWS
           </Link>
           <Link
             className={classes.navLink}
             component={RouterLink}
-            to="/Countries"
+            to="/"
           >
             ABOUT
           </Link>
           <Link
             className={classes.navLink}
             component={RouterLink}
-            to="/Countries"
+            to="/"
           >
             CONTACT
           </Link>

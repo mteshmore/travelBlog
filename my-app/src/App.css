@@ -1,8 +1,9 @@
 body {
   margin: 0;
   font-family: "Raleway";
-  /* background-image: linear-gradient(white, #FCF5E8); */
-  background-image: url("./images/background.png");
+  font-size: 14px;
+  background-image: linear-gradient(white, #FCF5E8);
+  /* background-image: url("./images/background.png"); */
   background-repeat: no-repeat;
   background-size: cover;
 }
