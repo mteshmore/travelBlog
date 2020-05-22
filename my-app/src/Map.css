@@ -1,0 +1,47 @@
+.container {
+    display: inline-flex;
+}
+
+.legend {
+    margin-top: 100px;
+    padding-left: 100px;
+    width: 40vw;
+}
+
+.map {
+    width: 50vw;
+}
+
+.continents-list {
+    margin-top: 20px;
+}
+
+.continent-title {
+    background-color: transparent;
+    color: "#707070" !important;
+    font-family: "Raleway";
+    box-shadow: none;
+    font-size: 25px;
+    border: none;
+}
+
+.continent-title :hover {
+    font-weight: bold !important;
+    font-size: 20px;
+}
+
+.countries {
+    padding: 10px;
+}
+
+.country-title {
+    padding-bottom: 5px;
+    color: "#707070";
+}
+
+
+#chartdiv {
+    padding-top: 100px;
+    width: 100%;
+    height: 500px;
+}
