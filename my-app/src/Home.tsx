@@ -1,5 +1,7 @@
 import React from "react";
 
+import MobilePanel from "./MobilePanel";
+
 import "./Home.css";
 import { Theme, WithStyles, withStyles, Typography } from "@material-ui/core";
 
@@ -17,6 +19,77 @@ export class Home extends React.Component {
     count: 0,
   };
   render() {
+    const destinations = [
+      {
+        label: "DESTINATION ONE",
+        imgPath: "./images/destination-1.png",
+      },
+      {
+        label: "DESTINATION TWO",
+        imgPath: "./images/destination-2.png",
+      },
+      {
+        label: "DESTINATION THREE",
+        imgPath: "./images/destination-3.png",
+      },
+      {
+        label: "DESTINATION FOUR",
+        imgPath: "./images/destination-4.png",
+      },
+    ];
+
+    const news = [
+      {
+        label: "NEWS ARTICLE ONE",
+        imgPath: "./images/news-1.png",
+      },
+      {
+        label: "NEWS ARTICLE TWO",
+        imgPath: "./images/news-2.png",
+      },
+      {
+        label: "NEWS ARTICLE THREE LONGER NOW",
+        imgPath: "./images/news-3.png",
+      },
+      {
+        label: "NEWS ARTICLE FOUR",
+        imgPath: "./images/news-4.png",
+      },
+      {
+        label: "NEWS ARTICLE FIVE",
+        imgPath: "./images/news-5.png",
+      },
+    ];
+
+    const polariodDest = destinations.map((dest, i) => {
+      return (
+        <div className={"polaroid-destination dest-" + (i % 2)} id={"dest" + i}>
+          <img
+            className="destination-picture"
+            src={dest.imgPath}
+            alt={dest.label}
+          />{" "}
+          <img
+            className="destination-divider"
+            src="./images/dots.png"
+            alt="dots"
+          />
+          <div className="dest-text" color="textPrimary">{dest.label}</div>
+        </div>
+      );
+    });
+
+    const newsPanel = news.map((article, i) => {
+      return (
+        <div className="news-block">
+          <img className="news-image" src={article.imgPath} alt="news" />
+          <div className="news-title-background">
+            <div className="news-title">{article.label}</div>
+          </div>
+        </div>
+      );
+    });
+
     return (
       <div>
         <div className="site-title"> </div>
@@ -46,60 +119,11 @@ export class Home extends React.Component {
         </div>
         <div className="destinations">
           <Typography variant="h1">Explore by Destinations</Typography>
-          <div className="polaroid-chain">
-            <div className="polaroid-destination dest-1">
-              <img
-                className="destination-picture"
-                src="./images/destination-1.png"
-                alt="destinations"
-              />{" "}
-              <img
-                className="destination-divider"
-                src="./images/dots.png"
-                alt="dots"
-              />
-              <Typography color="textPrimary"> DESTINATION ONE</Typography>
-            </div>
-            <div className="polaroid-destination dest-2">
-              <img
-                className="destination-picture"
-                src="./images/destination-2.png"
-                alt="destinations"
-              />{" "}
-              <img
-                className="destination-divider"
-                src="./images/dots.png"
-                alt="dots"
-              />
-              <Typography color="textPrimary"> DESTINATION TWO</Typography>
-            </div>
-            <div className="polaroid-destination dest-1">
-              <img
-                className="destination-picture"
-                src="./images/destination-3.png"
-                alt="destinations"
-              />{" "}
-              <img
-                className="destination-divider"
-                src="./images/dots.png"
-                alt="dots"
-              />
-              <Typography color="textPrimary"> DESTINATION THRE</Typography>
-            </div>
-            <div className="polaroid-destination dest-2">
-              <img
-                className="destination-picture"
-                src="./images/destination-4.png"
-                alt="destinations"
-              />{" "}
-              <img
-                className="destination-divider"
-                src="./images/dots.png"
-                alt="dots"
-              />
-              <Typography color="textPrimary"> DESTINATION FOUR</Typography>
-            </div>
+          <div className="mobile-polaroid-chain">
+            {" "}
+            <MobilePanel data={polariodDest} />{" "}
           </div>
+          <div className="polaroid-chain">{polariodDest}</div>
         </div>
         <div className="announcements">
           {/* <Typography variant="h1">Explore with our Podcasts</Typography> */}
@@ -117,47 +141,11 @@ export class Home extends React.Component {
         </div>
         <div className="news">
           <Typography variant="h1">Explore through News</Typography>
+          <div className="mobile-news-panel">
+            <MobilePanel data={newsPanel} />
+          </div>
           <div className="news-panel">
-            <div className="news-block">
-              <img
-                className="news-image"
-                src="./images/news-1.png"
-                alt="news"
-              />
-              <div className="news-title">NEWS <br/>ARTICLE <br/>TWO</div>
-            </div>
-            <div className="news-block">
-            <img
-                className="news-image"
-                src="./images/news-2.png"
-                alt="news"
-              />
-              <div className="news-title">NEWS <br/>ARTICLE <br/>THREE</div>
-            </div>
-            <div className="news-block">
-            <img
-                className="news-image"
-                src="./images/news-3.png"
-                alt="news"
-              />
-              <div className="news-title">NEWS <br/>ARTICLE <br/>FOUR</div>
-            </div>
-            <div className="news-block">
-            <img
-                className="news-image"
-                src="./images/news-4.png"
-                alt="news"
-              />
-              <div className="news-title">NEWS <br/>ARTICLE <br/>FIVE</div>
-            </div>
-            <div className="news-block">
-            <img
-                className="news-image"
-                src="./images/news-5.png"
-                alt="news"
-              />
-              <div className="news-title">NEWS <br/>ARTICLE <br/>ONE</div>
-            </div>
+            {newsPanel}
           </div>
         </div>
       </div>

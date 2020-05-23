@@ -13,8 +13,8 @@ const styles = (theme: Theme) => ({
   navLink: {
     color: theme.palette.primary.dark,
     fontSize: "14px",
-    margin: "0 5vw",
-    paddingTop: "20px",
+    padding: "2em",
+    paddingTop: "3em",
     "&:hover": {
       fontWeight: "bolder",
       textDecoration: "none",
@@ -24,7 +24,7 @@ const styles = (theme: Theme) => ({
     backgroundColor: "transparent",
     boxShadow: "none",
     zIndex: 2,
-    width: "100vw",
+    width: "100%",
     alignItems: "center",
   },
 });
