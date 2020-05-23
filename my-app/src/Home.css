@@ -1,5 +1,4 @@
 .site-title {
-  /* background-image: url("https://images.unsplash.com/photo-1428908728789-d2de25dbd4e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"); */
   background-image: url("./images/home-title.png");
   height: 800px;
   background-position: center;
@@ -29,7 +28,6 @@
 
 .timeline-text-box {
   padding-top: 10px;
-  
 }
 
 .destinations {
@@ -41,7 +39,6 @@
   background-size: contain;
   background-position-y: 100px;
   width: 100%;
-  
 }
 
 .polaroid-chain {
@@ -54,7 +51,7 @@
 }
 
 @media only screen and (max-width: 500px) {
-  .polaroid-chain{
+  .polaroid-chain {
     display: none;
   }
 
@@ -65,11 +62,11 @@
 
 .polaroid-destination {
   background-image: url("./images/destinations-graphic.png");
-  height: 200px;
-  width: 150px;
+  height: 250px;
+  width: 200px;
   box-shadow: 2px 2px 6px #b3b3b3;
   border-radius: 5px;
-  margin: 20px;
+  margin: 25px;
   padding: 15px;
 }
 
@@ -82,7 +79,7 @@
 }
 
 .destination-picture {
-  width: 150px;
+  width: 200px;
 }
 
 .destination-divider {
@@ -96,6 +93,28 @@
   font-family: Raleway;
 }
 
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+  .polaroid-destination {
+    height: 200px;
+    width: 150px;
+    padding: 15px;
+    margin: 20px;
+  }
+  .destination-picture {
+    width: 150px;
+  }
+
+  .destination-divider {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 10px;
+  }
+
+  .dest-text {
+    font-size: 12px;
+  }
+}
+
 @media only screen and (min-width: 500px) and (max-width: 1000px) {
   .polaroid-destination {
     height: 160px;
@@ -106,7 +125,7 @@
   .destination-picture {
     width: 125px;
   }
-  
+
   .destination-divider {
     padding-top: 1px;
     padding-bottom: 1px;
@@ -193,7 +212,7 @@
 }
 
 @media only screen and (max-width: 900px) {
-  .news-panel{
+  .news-panel {
     display: none;
   }
 
@@ -201,7 +220,6 @@
     display: block;
   }
 }
-
 
 .home-undlerined {
   background-image: url("./images//curly-underline-2.png");
