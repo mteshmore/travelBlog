@@ -1,0 +1,60 @@
+.site-title {
+  background-image: url("../images/home-title.png");
+  height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.timeline {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 100%;
+}
+
+.timeline-graphic {
+  margin: auto;
+  padding-top: 25px;
+  width: 57%;
+}
+
+.timeline-text {
+  display: inline-flex;
+  text-align: center;
+  width: 60%;
+  justify-content: space-between;
+}
+
+.timeline-text-box {
+  padding-top: 10px;
+}
+
+.announcements {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.announcement-picture {
+  width: 100%;
+}
+
+.blogs {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 100%;
+}
+
+.home-underlined {
+  background-image: url("../images//curly-underline-2.png");
+  background-repeat: no-repeat;
+  background-size: 400px;
+  background-position: center;
+  background-position-y: 40px;
+}
+
+.blog-picture {
+  padding-top: 25px;
+  width: 80%;
+}

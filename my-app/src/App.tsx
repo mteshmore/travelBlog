@@ -1,10 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import Header from "./Header";
-import Footer from "./Footer";
-import { Home } from "./Home";
-import { Countries } from "./Countries";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import { Home } from "./pages/Home";
+import { Countries } from "./pages/Countries";
+import { Contact } from "./pages/Contact";
+
+import { IndividualCountry } from "./IndividualCountry";
 
 import { createMuiTheme, ThemeProvider } from "@material-ui/core";
 import "./App.css";
@@ -49,22 +52,34 @@ const defaultTheme = createMuiTheme({
       },
       h1: {
         fontFamily: "Free Pen",
-        fontSize: "70px",
+        fontSize: "60px",
         color: "#707070",
+        '@media (max-width:1000px)': {
+          fontSize: '50px',
+        },
       },
       h2: {
-        fontSize: "35px",
+        fontSize: "30px",
         fontWeight: "lighter",
         color: "#BD9391",
+        '@media (max-width:1000px)': {
+          fontSize: '25px',
+        },
       },
       h3: {
-        fontSize: "22px",
+        fontSize: "20px",
         fontWeight: "normal",
         color: "#BD9391",
+        '@media (max-width:1000px)': {
+          fontSize: '16px',
+        },
       },
       h4: {
         fontFamily: "Free Pen",
         fontSize: "45px",
+        '@media (max-width:1000px)': {
+          fontSize: '40px',
+        },
       },
     },
     MuiLink: {
@@ -103,11 +118,13 @@ export default class App extends React.Component<MyProps, MyState> {
             <Header />
             <div>
               <Switch>
+                <Route exact path="/Peru" component={IndividualCountry} />
+                <Route exact path="/Contact" component={Contact} />
                 <Route exact path="/Countries" component={Countries} />
                 <Route path="/" component={Home} />
               </Switch>
-              <Footer />
             </div>
+            <Footer />
           </Router>
         </ThemeProvider>
       </div>

@@ -3,7 +3,7 @@ import * as React from "react";
 
 import FacebookIcon from "@material-ui/icons/Facebook";
 import InstagramIcon from "@material-ui/icons/Instagram";
-import "./footer.css";
+import "./Footer.css";
 
 export default class Footer extends React.Component {
   render() {
