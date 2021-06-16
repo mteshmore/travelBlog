@@ -2,10 +2,19 @@ body {
   margin: 0;
   font-family: "Raleway";
   font-size: 14px;
-  background-image: linear-gradient(white, #FCF5E8);
+  background-image: linear-gradient(white, rgb(211, 230, 236));
   /* background-image: url("./images/background.png"); */
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.MuiTypography-body1 {
+  font-size: 1rem !important;
+}
+
+.MuiTypography-h1 {
+  font-size: 4rem !important;
+  padding: 20px 0px;
 }
 
 @media (prefers-reduced-motion: no-preference) {

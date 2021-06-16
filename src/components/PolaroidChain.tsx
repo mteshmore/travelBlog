@@ -1,6 +1,7 @@
 import React from "react";
 import Typography from "@material-ui/core/Typography";
 import MobilePanel from "./MobilePanel";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import "./PolaroidChain.css";
 
@@ -31,7 +32,10 @@ export default class NewsPanel extends React.Component<MyProps> {
               src="./images/dots.png"
               alt="dots"
             />
-            <div className="dest-text">{dest.label}</div>
+            <Typography className="dest-text" color="textPrimary">
+              {dest.label}
+            </Typography>
+            <FontAwesomeIcon className="explore-icon" icon="plus" />
           </div>
         );
       }

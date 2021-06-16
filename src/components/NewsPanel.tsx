@@ -14,23 +14,25 @@ interface MyState {
 
 export default class NewsPanel extends React.Component<MyProps> {
   render() {
-    const newsPanel = this.props.data.map((article: { imgPath: string ; label: string; }, i: any) => {
-      return (
-        <div className="news-block">
-          <img className="news-image" src={article.imgPath} alt="news" />
-          <div className="news-title-background">
-            <div className="news-title">{article.label}</div>
+    const newsPanel = this.props.data.map(
+      (article: { imgPath: string; label: string }, i: any) => {
+        return (
+          <div className="news-block">
+            <img className="news-image" src={article.imgPath} alt="news" />
+            <div className="news-title-background">
+              <div className="news-title">{article.label}</div>
+            </div>
           </div>
-        </div>
-      );
-    });
+        );
+      }
+    );
     return (
       <div>
         <Typography variant="h1">Explore through News</Typography>
         <div className="mobile-news-panel">
           <MobilePanel data={newsPanel} />
         </div>
-        <div className="news-panel">{newsPanel}</div>
+        <Typography className="news-panel">{newsPanel}</Typography>
       </div>
     );
   }

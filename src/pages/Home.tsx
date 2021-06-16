@@ -5,6 +5,7 @@ import PolaroidChain from "../components/PolaroidChain";
 
 import "./Home.css";
 import { Theme, WithStyles, withStyles, Typography } from "@material-ui/core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 interface MyProps {
   // adding a ? makes the props optional
@@ -62,27 +63,40 @@ export class Home extends React.Component {
       <div>
         <div className="site-title"> </div>
         <div className="timeline">
-          <Typography variant="h1">Plan your adventure with us!</Typography>
+          <Typography variant="h1">
+            Plan your next adventure with us!
+          </Typography>
+          <Typography className="timeline-subtitle">
+            With just a few simple steps you'll be on your way to your next
+            adventure. Click on any of the following action items to learn more.
+          </Typography>
           <div>
-            <img
+            {/* <img
               src="../images/home-timeline.png"
               alt="plan-trip-timeline"
               className="timeline-graphic"
-            />
+            /> */}
           </div>
-          <div className="timeline-text">
-            <Typography className="timeline-text-box" color="textPrimary">
-              EXPLORE
-            </Typography>
-            <Typography className="timeline-text-box" color="textPrimary">
-              CONTACT
-            </Typography>
-            <Typography className="timeline-text-box" color="textPrimary">
-              RESERVE
-            </Typography>
-            <Typography className="timeline-text-box" color="textPrimary">
-              TAKE-OFF
-            </Typography>
+          <div className="timeline-text-container">
+            <div className="timeline-text">
+              <FontAwesomeIcon icon="plus" />
+              <Typography>EXPLORE</Typography>
+            </div>
+            <div className="timeline-line"></div>
+            <div className="timeline-text">
+              <FontAwesomeIcon icon="phone" />
+              <Typography>CONTACT</Typography>
+            </div>
+            <div className="timeline-line"></div>
+            <div className="timeline-text">
+              <FontAwesomeIcon icon="pencil-alt" />
+              <Typography>RESERVE</Typography>
+            </div>
+            <div className="timeline-line"></div>
+            <div className="timeline-text">
+              <FontAwesomeIcon icon="plane" />
+              <Typography>TAKE-OFF</Typography>
+            </div>
           </div>
         </div>
         <div className="destinations">

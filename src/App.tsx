@@ -12,6 +12,15 @@ import { IndividualCountry } from "./IndividualCountry";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core";
 import "./App.css";
 
+import { library } from "@fortawesome/fontawesome-svg-core";
+import {
+  faPlane,
+  faPencilAlt,
+  faPlus,
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
+library.add(faPlane, faPencilAlt, faPlus, faPhone);
+
 // const freePen = {
 //   fontFamily: "Free Pen",
 //   src: `
@@ -54,31 +63,31 @@ const defaultTheme = createMuiTheme({
         fontFamily: "Free Pen",
         fontSize: "60px",
         color: "#707070",
-        '@media (max-width:1000px)': {
-          fontSize: '50px',
+        "@media (max-width:1000px)": {
+          fontSize: "50px",
         },
       },
       h2: {
         fontSize: "30px",
         fontWeight: "lighter",
         color: "#BD9391",
-        '@media (max-width:1000px)': {
-          fontSize: '25px',
+        "@media (max-width:1000px)": {
+          fontSize: "25px",
         },
       },
       h3: {
         fontSize: "20px",
         fontWeight: "normal",
         color: "#BD9391",
-        '@media (max-width:1000px)': {
-          fontSize: '16px',
+        "@media (max-width:1000px)": {
+          fontSize: "16px",
         },
       },
       h4: {
         fontFamily: "Free Pen",
         fontSize: "45px",
-        '@media (max-width:1000px)': {
-          fontSize: '40px',
+        "@media (max-width:1000px)": {
+          fontSize: "40px",
         },
       },
     },

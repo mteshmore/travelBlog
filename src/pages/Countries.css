@@ -1,17 +1,17 @@
 .container {
-    margin: 100px;
+  margin: 10rem 20rem 15rem 20rem;
 }
 
 .legend {
-    margin: auto;
-    width: 40%;
+  margin: auto;
+  width: 40%;
 }
 
 .countries-list {
-    padding-top: 25px;
+  padding-top: 25px;
 }
 
 .box {
-    display: inline-flex;
-    width: 80%;
+  display: inline-flex;
+  width: 80%;
 }

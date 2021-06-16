@@ -8,9 +8,14 @@
 
 .timeline {
   text-align: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
   width: 100%;
+}
+
+.timeline-subtitle {
+  width: 50%;
+  margin: 0px auto 40px auto !important;
 }
 
 .timeline-graphic {
@@ -19,11 +24,44 @@
   width: 57%;
 }
 
-.timeline-text {
+.timeline-text-container {
   display: inline-flex;
   text-align: center;
   width: 60%;
   justify-content: space-between;
+}
+
+.timeline-text-container p {
+  transition: all 275ms;
+  -webkit-transition: all 275ms;
+  cursor: pointer;
+}
+
+.timeline-text {
+  width: 100%;
+}
+
+.timeline-text:hover > p {
+  font-weight: bold;
+}
+
+.timeline-text p {
+  padding-top: 15px;
+}
+
+.timeline-text-container svg {
+  color: white;
+  background-color: #bd9391;
+  padding: 15px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.timeline-line {
+  width: 100%;
+  background-color: black;
+  height: 1px;
+  margin-top: 20px;
 }
 
 .timeline-text-box {
@@ -51,7 +89,8 @@
   background-repeat: no-repeat;
   background-size: 400px;
   background-position: center;
-  background-position-y: 40px;
+  background-position-y: 80px;
+  filter: grayscale(1);
 }
 
 .blog-picture {
